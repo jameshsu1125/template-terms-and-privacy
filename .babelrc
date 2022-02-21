@@ -1,0 +1,14 @@
+{
+	"presets": [
+		"@babel/preset-env",
+		[
+			"@babel/preset-react",
+			{
+				"runtime": "automatic" // 只要用jsx就不用import React from 'react';
+			}
+		]
+	],
+	"plugins": [
+		["@babel/transform-runtime"] // <= async await
+	]
+}

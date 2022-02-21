@@ -1,0 +1,38 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["plugin:react/recommended", "airbnb"],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 12,
+		"sourceType": "module"
+	},
+	"plugins": ["react", "react-hooks"],
+	"rules": {
+		"operator-linebreak": [2, "after", { "overrides": { "?": "before", ":": "before" } }],
+		"react/function-component-definition": [0], // 允許 arrow function components
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		// tab
+		"indent": [2, "tab", { "SwitchCase": 1, "VariableDeclarator": 1 }],
+		"react/jsx-indent": [2, "tab"],
+		"react/jsx-indent-props": [2, "tab"],
+		// 單引號
+		"jsx-quotes": [2, "prefer-single"],
+		// 不用export default
+		"import/prefer-default-export": 0,
+		"object-curly-newline": 0,
+		"react/react-in-jsx-scope": 0,
+		"react/prop-types": 0,
+		"react/jsx-props-no-spreading": 0,
+		"no-tabs": 0,
+		"no-new": 0,
+		// hook
+		"react-hooks/rules-of-hooks": "error", // 檢查 Hook 的規則
+		"react-hooks/exhaustive-deps": "warn" // 檢查 effect 的相依性
+	}
+}
