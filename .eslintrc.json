@@ -33,6 +33,8 @@
 		"no-new": 0,
 		// hook
 		"react-hooks/rules-of-hooks": "error", // 檢查 Hook 的規則
-		"react-hooks/exhaustive-deps": "warn" // 檢查 effect 的相依性
+		"react-hooks/exhaustive-deps": "warn", // 檢查 effect 的相依性
+		"react/jsx-one-expression-per-line": 0,
+		"max-len": 0
 	}
 }
